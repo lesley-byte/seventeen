@@ -15,11 +15,11 @@ while True:
         s0 = float(s)
         s1 = int(s0)
         s2  = s1 + 17
-        s3 = "*Enter a valid year of birth*"
+        s3 = "*Enter a valid year of birth in entry box*"
     except ValueError:
         s = 0
         continue
-    if values[0] and (s2 > 1000):
+    if values[0] and (s2 > 1800) and (s2 < 2100):
         window['-OUTPUT-'].update(s2)       
     else:
         window['-OUTPUT-'].update(s3)
